@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>EarthExplorer</title>
+	<style type="text/css">
+		body 
+		{
+            margin: 0;
+            padding: 0;
+            height: 100%;
+		}
+		.sec1 
+		{
+			background-color: #133561;
+			width: 100%;
+			height: 60px;
+			margin: 0;
+			margin-bottom: 1px;
+			padding: 10px;
+		}
+		.bannerflag 
+		{
+			width: 20px;
+			height: 15px;
+			float: left;
+			margin-left: 15px;
+			margin-top: 7px;
+			margin-bottom: 5px;
+			padding-top: 0;
+		}
+		.banner_text 
+		{
+			width: 100%;
+			height: 15px;
+			float: left;
+			margin-top: 7px;
+			margin-bottom: 5px;
+			padding-top: 0;
+			font-family: Arial, sans-serif;
+			font-size: 12px;
+		}
+		.sec2 
+		{
+			background-color: #30353b;
+			width: 100%;
+			height: 35px;
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			margin: 0;
+			padding: 10px;	
+		}
+		.regtext 
+		{
+			width: 100%; /* Use full width */
+			display: flex; /* Enable Flexbox */
+			align-items: center; /* Vertically align items */
+			justify-content: space-between; /* Space between paragraph and nav */
+			gap: 10px; /* Optional: Adjust the gap between items */
+			font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif; 
+			font-size: 18px; 
+			color: white;
+		}
+		.nav 
+		{
+			display: flex; /* Flexbox for the nav */
+			gap: 10px; /* Add some space between the links */
+		}
+
+		nav a 
+		{
+			color: grey;
+			text-decoration: none;
+		}
+		#registrationStepInfo 
+		{
+		margin-left: 10px;
+		margin-right: 10px;
+    	border-bottom: 1px solid #CCCCCC;
+    	border-top: 1px solid #CCCCCC;
+    	font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    	font-size: 0.9em;
+    	font-style: italic;
+    	padding: 5px 0;
+    	margin-bottom: 10px;
+    	text-align: center;
+		}
+
+		.foot
+		{
+			background-color: #133561;
+			color: white;
+			width: 100%;
+			height: 60px;
+			margin: 0;
+			margin-bottom: 1px;
+			padding: 10px;	
+			font-family: Arial,sans-serif;		
+		}
+	</style>
+</head>
+<body>
+	<section style="display: flex; align-items: center; gap: 7px;">
+		<div class="bannerflag">
+			<img src="https://ims.cr.usgs.gov/lib/web/us_flag_small.png" width="20px" height="15px"> 		
+		</div>
+		<div class="banner_text">
+			<p style="margin: 0;">An official website of the U.S. Govt.   <a href="#know">Here's how you know</a></p>
+		</div>
+		<div class="banner_text">
+			
+		</div>
+	</section>
+
+	<section>
+		<div class="sec1">
+			<img src="multimedia/usgs-logo.png">
+		</div>
+	</section>
+
+	<section class="sec2">
+		<div class="regtext">
+			<p>EROS Registration System</p>
+			<div class="nav">
+				<nav>
+					<a href="#password">Change Password</a>
+					<a href="#help">Help</a>
+					<a href="#feedback">Feedback</a>
+					<a href="#login">Login</a>
+				</nav>
+			</div>
+		</div>
+
+	</section>
+	<section>
+		<div id="registrationStepInfo">
+			<p>Registration and login credentials are required to access all system features and download data from USGS EROS web services. To ensure privacy and security, ERS uses Hypertext Transfer Protocol with Secure Sockets Layer (HTTPS) to encrypt user authentication.</p>
+			<br>
+			<p>To register, please create a username and password. The information gathered from the registration process is not distributed to other organizations and is only used to determine trends in data usage. Review USGS Privacy Policies.</p>
+			<br>
+			<p>The Cancel button can be used to exit the registration process at any time and information entered will be lost.</p>
+		</div>
+	</section>
+
+	<footer class="foot">
+			<div>
+				<nav class="">
+					<a href="#privacy">DOI Privacy Policy</a>|
+					<a href="#legal">Legal</a>|
+					<a href="#accessibility">Accessibility</a>|
+					<a href="#map">Site Map</a>|
+					<a href="#contact">Contact USGS</a>
+				</nav>
+			</div>
+			<div>
+				<nav class="">
+					<a href="#interior">U.S. Department of the Interior</a>|
+					<a href="#doi">DOI Inspector General</a>|
+					<a href="#w_house">White House</a>|
+					<a href="#egov">E-gov</a>|
+					<a href="#nfa">No Fear Act</a>|
+					<a href="#foia">FOIA</a>
+				</nav>
+			</div>		
+	</footer>	
+</body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>EarthExplorer</title>
+	<style type="text/css">
+		body 
+		{
+            margin: 0;
+            padding: 0;
+            height: 100%;
+      }
+		.sec1
+		{
+			background-color: #133561;
+			width: 100%;
+			height: 60px;
+			margin: 0;
+			margin-bottom: 1px;
+			padding: 10px;
+		}
+		.bannerflag
+		{
+			width: 20px;
+			height: 15px;
+			float: left;
+			margin-left: 15px;
+			margin-top: 7px;
+			margin-bottom: 5px;
+			padding-top: 0;
+		}
+		.banner_text
+		{
+			width: 190px;
+			height: 15px;
+			float: left;
+			margin-top: 7px;
+			margin-bottom: 5px;
+			padding-top: 0;
+			font-family: Arial, sans-serif;
+			font-size: 12px;
+		}
+		.sec2
+		{
+			background-color: #30353b;
+			width: 100%;
+			height: 35px;
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			margin: 0;
+			padding: 10px;	
+		}
+		.regtext
+		{
+			width: 100%;
+			display: flex; 
+			align-items: center;
+			justify-content: space-between; 
+			gap: 10px; 
+			font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif; 
+			color: white;
+		}
+		.nav
+		{
+		 	display: flex; 
+			gap: 5px;
+			text-size-adjust: 16px;
+		}
+		nav a
+		{
+			color: grey;
+			margin-right: 25px;
+			text-decoration: none;
+		}
+		#registrationStepInfo 
+		{
+			margin-left: 10px;
+			margin-right: 10px;
+	    	border-bottom: 1px solid #CCCCCC;
+	    	border-top: 1px solid #CCCCCC;
+	    	font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+	    	font-size: 0.9em;
+	    	font-style: italic;
+	    	padding: 5px 0;
+	    	margin-bottom: 10px;
+	    	text-align: center;
+		}
+		.form
+		{
+			height: 500px;
+			width: 600px;
+			font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+			margin-left: 100px;
+			margin-bottom: 10px;
+			border: 1px solid #CCCCCC;
+			border-radius: 15px;
+			float: left;
+		}
+		input
+		{
+			margin-left: 10px;
+			height: 40px;
+			width: 250px;
+			background-color: #fafafa;
+			border-color: #929090;
+		}
+		.req1
+		{
+			height: 300px;
+			width: 300px;
+			font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+			margin-left: 100px;
+			margin-bottom: 10px;
+			border: 1px solid #CCCCCC;
+			border-radius: 15px;
+			background-color: #ecf0f1;
+			border-color: #678ab7;
+			float: left;
+			padding: 10px;
+		}
+		.req2
+		{
+			height: 250px;
+			width: 300px;
+			font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+			margin-left: 100px;
+			margin-bottom: 10px;
+			border: 1px solid #CCCCCC;
+			border-radius: 15px;
+			background-color: #ecf0f1;
+			border-color: #678ab7;
+			float: left;
+			padding: 10px;
+		}
+		.foot
+		{
+			background-color: #133561;
+			color: white;
+			width: 100%;
+			height: 60px;
+			margin: 0;
+			margin-bottom: 1px;
+			padding: 10px;	
+			font-family: Arial,sans-serif;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-between;		
+		}
+		.foot nav
+		{
+			gap: 10px;
+			justify-content: center;
+		}
+		.foot a
+		{
+			font-size: 14px;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<section style="display: flex; align-items: center; gap: 7px;">
+			<div class="bannerflag">
+				<img src="https://ims.cr.usgs.gov/lib/web/us_flag_small.png" width="20px" height="15px"> 		
+			</div>
+			<div class="banner_text">
+				<p style="margin: 0;">An official website of the U.S. Govt.</p>
+			</div>
+			<div class="banner_text">
+				<p style="margin: 0;"><a href="#know">Here's how you know</a></p>
+			</div>
+		</section>
+
+		<section>
+			<div class="sec1">
+				<img src="multimedia/usgs-logo.png">
+			</div>
+		</section>
+
+		<section class="sec2">
+			<div class="regtext">
+				<p style="font-size: 20px;">EROS Registration System</p>
+				<nav class="nav">
+					<a href="#password">Change Password</a>
+					<a href="#help">Help</a>
+					<a href="#feedback">Feedback</a>
+					<a href="#login">Login</a>
+				</nav>
+			</div>	
+		</section>
+	</header>
+		<section>
+			<div id="registrationStepInfo">
+				<p>Registration and login credentials are required to access all system features and download data from USGS EROS web services. To ensure privacy and security, ERS uses Hypertext Transfer Protocol with Secure Sockets Layer (HTTPS) to encrypt user authentication.</p>
+				<br>
+				<p>To register, please create a username and password. The information gathered from the registration process is not distributed to other organizations and is only used to determine trends in data usage. Review USGS Privacy Policies.</p>
+				<br>
+				<p>The Cancel button can be used to exit the registration process at any time and information entered will be lost.</p>
+			</div>
+		</section>
+
+
+<section style="display: flex; align-items: center; gap: 7px;">
+	<div class="form">
+		<form>
+			<p style="margin-left: 10px; margin-top:30px"><b>Username:</b></p>
+			<div><input type="text" name="username"></div>
+			<p style="margin-left: 10px; margin-top:30px"><b>New Password:</b></p>
+			<div><input type="text" name="password"></div>
+			<p style="margin-left: 10px; margin-top:30px"><b>Confirm Password:</b></p>
+			<div><input type="text" name="password"></div>
+			<input type="checkbox" name="notrobot" value="I'm not a robot">I'm not a robot<br><br>
+			<button style="margin-left: 10px; border-color: #929090;; width: 100px; height: 30px;"><a href="#register"><b>Continue</b></a></button>
+		</form>
+	</div>
+	<div class="req1">
+		<h2>Username Requirments</h2>
+		<ul>
+			<li>Must be between 4 and 30 characters</li>
+			<li>May contain alphabetic and numeric characters</li>
+			<li>May only contain the following special characters</li>
+			<ul>
+				<li>period "."</li>
+				<li>at sign "@"</li>
+				<li>underscore "_"</li>
+				<li>dash "-"</li>
+			</ul>
+		</ul>
+	</div>
+	<br>
+	<div class="req2">
+		<h2>Password Requirements</h2>
+		<ul>
+			<li>Must be between 12 and 64 characters</li>
+			<li>Cannot contain 3 or more repeating characters (eg. "aaa")</li>
+		</ul>
+	</div>
+</section>
+
+<br><br>
+		<section>
+			<div id="registrationStepInfo">
+				<p>OMB number 1028-0119 <br>
+OMB expiration date 04/30/2027 </p>
+				<br>
+				<p>Privacy and Paperwork Reduction Act statements: 16 U.S.C. 1a7 authorized collection of this information. This information will be used by the U.S. Geological Survey to better serve the public. The time required to complete this information collection is estimated to average 2 minutes per response. We will not distribute responses associated with you as an individual. We ask you for some basic organizational and contact information to help us interpret the results and, if needed, to contact you for clarification. Comments on this collection should be sent to custserv@usgs.gov.</p>
+			</div>
+		</section>
+	
+	<footer class="foot">
+			<div>
+				<nav class="">
+					<a href="#privacy">DOI Privacy Policy</a>|
+					<a href="#legal">Legal</a>|
+					<a href="#accessibility">Accessibility</a>|
+					<a href="#map">Site Map</a>|
+					<a href="#contact">Contact USGS</a>
+				</nav>
+			</div>
+			<div>
+				<nav class="">
+					<a href="#interior">U.S. Department of the Interior</a>|
+					<a href="#doi">DOI Inspector General</a>|
+					<a href="#w_house">White House</a>|
+					<a href="#egov">E-gov</a>|
+					<a href="#nfa">No Fear Act</a>|
+					<a href="#foia">FOIA</a>
+				</nav>
+			</div>		
+	</footer>
+</body>
+</html>
